@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand fs-4 fw-bold" href="#">Nabil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- home -->
+    <section id="home" class="home container">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
+                <h3 class="fw-semibold">Hi! I am</h3>
+                <h1 class="fw-bold">Muhammad Nabil Fauzan</h1>
+                <p>I am Frontend Developer based in Indonesia</p>
+                <a class="btn button" href="files/Muhammad Nabil Fauzan_Resume.pdf" download>Resume</a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+                <img class="img-home" src="images/nabil.jpg" alt="Potrait">
+            </div>
+        </div>
+        <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class="text-dark">More Info</div>
+            <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow icon">
+        </a>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="about container">
+        <p>Hi! My name is Muhammad Nabil Fauzan and you can call me Nabil. My hobby is playing sports, especially football, futsal, and badminton.
+            I graduated from Telkom University majoring in informatics in 2022.
+            I have a great interest about Frontend Websites. My hobby is playing sports, especially football, futsal, and badminton.
+            I have some experience in organizing when I was still in college, such as being a chief of staff, chair of an event, or being an ordinary staff.
+        </p>
+        <div class="about-exp">
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                        <div>
+                            <h5>Keluarga Besar Mahasiswa Sulawesi Telkom University (Jun 2020 - Jun 2021)</h5>
+                            <p>Chief of Staff for Human Resources Development</p>
+                        </div>
+                        <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Become the Chief of Staff in the field of Human Resource Development which aims to advance the quality of students and create a 
+                    forum to develop the talents and interests of Sulawesi students who are at Telkom University.</p>
+
+            </div>
+        </div>
+        <div class="about-exp">
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                        <div>
+                            <h5>Anniversary Keluarga Besar Mahasiswa Sulawesi Telkom University (Aug 2019 - Dec 2019)</h5>
+                            <p>Head of Event</p>
+                        </div>
+                        <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Become the chairman of the organization's anniversary celebration committee by holding sports and art competitions by inviting 
+                    participants from Sulawesi students who are in Bandung.</p>
+
+            </div>
+        </div>
+        <div class="about-exp">
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                        <div>
+                            <h5>Keluarga Besar Mahasiswa Sulawesi Telkom University (Jun 2018 - Jun 2019)</h5>
+                            <p>Staff for Human Resources Development</p>
+                        </div>
+                        <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Become the Staff in the field of Human Resource Development which aims to advance the quality of students and create a 
+                    forum to develop the talents and interests of Sulawesi students who are at Telkom University.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- work -->
+    <section id="work" class="work container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col-12 col-md-5">
+                <p>I once made a web project for a student database when I took a course on website developers.
+                    I also made some designs about the ui/ux of an application. 
+                    I learned about ui/ux so that the appearance of the website that I created could look more beautiful and user friendly.
+                </p>
+            </div>
+            <div class="col-12 col-md-5 work-img">
+                <div id="works-1" class="work-img-item">
+                    <img src="images/works-1.png" alt="works 1" id="works-1">
+                </div>
+                <div id="works-2" class="work-img-item">
+                    <img src="images/works-2.png" alt="works 2" id="works-2">
+                </div>
+                <div id="works-3" class="work-img-item">
+                    <img src="images/works-3.png" alt="works 3" id="works-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col-12 col-lg-6">
+                <p>You can contact me through my social media such as Facebook, Instagram or Twitter. 
+                    You can also send report via the form on the right by entering your email name, email subject, and the message you want to convey</p>
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <a href="https://www.facebook.com/nabilfauzaan/">
+                            <img class="w-100" src="images/Facebook.svg" alt="Facebook">
+                        </a>
+                        <p class="mb-0 ms-2">Muhammad Nabil Fauzan</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <a href="https://www.instagram.com/nabilfauzaan/">
+                            <img class="w-100" src="images/Instagram.svg" alt="Instagram">
+                        </a>
+                        <p class="mb-0 ms-2">@nabilfauzaan</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <a href="https://twitter.com/Nabilfauzaan_">
+                            <img class="w-100" src="images/Twitter.svg" alt="Twitter">
+                        </a>
+                        <p class="mb-0 ms-2">@nabilfauzaan_</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <form class="contact-form" onsubmit="onFormSubmit(event)">
+                    <div class="mb-3">
+                      <label for="inp_email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="inp_email" placeholder="example@email.com" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="inp_subject" class="form-label">Subject</label>
+                      <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inp_message" class="form-label">Message</label>
+                        <input type="text" class="form-control" id="inp_message" placeholder="Your Message" required>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button type="submit" class="btn button">Submit</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
